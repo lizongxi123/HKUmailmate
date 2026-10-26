@@ -1,0 +1,48 @@
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+id_rsa
+id_ed25519
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+*.egg-info/
+
+# Frontend and build output; dependency lockfiles remain tracked
+node_modules/
+dist/
+build/
+coverage/
+*.tsbuildinfo
+
+# Local databases, backups and private mail exports
+*.sqlite
+*.sqlite3
+*.db
+*.sql.gz
+*.dump
+*.eml
+*.mbox
+backups/
+private-data/
+
+# Logs and local tools
+*.log
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
